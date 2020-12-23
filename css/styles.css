@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+.aside a:link {
+    color: rgb(215, 243, 248);
+    background-color: rgb(126, 78, 86);
+    border-radius: 4px;
+    text-decoration: none;
+    padding:5px;
+    margin:5px;
+    font-size: 0.9em;
+    transition: color 1s;
+   }
+.menu a:link {
+    color: rgba(244, 252, 217, 0.87);
+    border-radius: 4px;
+    text-decoration: none;
+    padding:5px;
+    margin:5px;
+    font-size: 1.3em;
+  }
+a:visited { color: rgb(253, 246, 251);}
+a:hover {
+    color: rgb(196, 247, 213);
+    padding: 10px;
+    margin:5px;
+    transition: color 1s;
+   }
+a:active { color: #cacadf;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/* stilurile pentru dispozitivele mobile */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 660px) {
+    /* pentru tableta 
+	Prima sectiune se va întinde pe 3 coloane, a doua se va întinde pe 9, iar secțiunea a treia va fi afișată mai intai pe două coloane, iar apoi se va întinde pe 12 coloane
+	*/
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 780px) {
+    /* pentru desktop 
+	Prima și a treia secțiune - se vor întinde pe 3 coloane fiecare. Secțiunea de mijloc se va întinde pe 6 coloane.
+	*/
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Lucida Sans", sans-serif;
+    padding:0;
+    margin: 0;
+}
+.header, .footer {
+    background-color: rgba(248, 96, 79, 0.8);
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 20px;
+    margin-bottom: 7px;
+    background-color: rgb(186, 97, 79);
+    font-size: 1.3em;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,1,2,0.12), 0 1px 2px rgba(0,1,2,0.24);
+}
+.menu li:hover {
+    background-color: rgb(248, 97, 79);
+    transition: background-color 1s;
+}
+.footer h3, .footer h4, .footer h5, .header h1 {
+	text-align: center;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.aside {
+    background-color: rgba(221, 153, 159, 0.9);
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top:10px;
+}
+.content{
+    font-size: 1.1em;
+}
+.aside h5{
+	color: rgb(240, 217, 174);
+}
+.content .image {
+    float: right;
+    margin: 7px;
+}
+.content h1, .content h3, .content p {
+	color: rgb(186, 97, 79);
+
+}
+.menu img {
+	max-width:100%;
+	min-height: auto;
+}
+#rezult{
+    font-size:1.5em;
+    color:rgb(140, 170, 92);
+}
+.ref{
+    margin: 5px;
+}
